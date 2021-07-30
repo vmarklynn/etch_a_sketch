@@ -1,18 +1,41 @@
 .container {
+  border-style: solid;
+  width: 500px;
+  height: 500px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
-;
 }
 
 .square {
-  width: 20px;
-  height: 20px;
   background-color: white;
-  border-style:solid;
-  border-color: black;
 }
 
 .fill {
   background-color: black;
+}
+
+.play-container {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  background-color: beige;
+}
+
+.main-header {
+  display:flex;
+  justify-content: center;
+  background-color: beige;
+
+}
+.button-housing
+{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+body {
+  background-color: beige;
 }
