@@ -9,7 +9,13 @@ function fill(e)
 
 function askSize()
 {
-  let size = parseInt(prompt("Please enter your desired size", "10"));
+  let size;
+
+  do{
+    size = parseInt(prompt("Please enter your desired size", "10"));
+  }
+  while(size < 1 || size > 100);
+    
   return size;
 }
 
@@ -34,8 +40,7 @@ function makeGrid(size) {
   }
 }
 
-
-
+// Main Game
 makeGrid(SIDE);
 
 const squares = document.querySelectorAll('.square');
@@ -51,5 +56,4 @@ reset.addEventListener('click', () =>{
   makeGrid(askSize());
   const squaress = document.querySelectorAll('.square');
   squaress.forEach(square => square.addEventListener('mouseover', fill));
-
 } )
